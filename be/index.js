@@ -13,10 +13,6 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 const port = 3000;
 
-app.get("/", (req, res) => {
-    res.send("Hello World!");
-})
-
 app.use("/api/payment", PaymentRoutes)
 
 app.listen(port, () => {
